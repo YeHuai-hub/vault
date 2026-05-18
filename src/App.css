@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%; margin: 0; padding: 0; overflow: hidden;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fade-in 0.12s ease-out; }
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #404040; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+* { scrollbar-width: thin; scrollbar-color: #404040 transparent; }
+
+/* Light theme overrides */
+.light .bg-black, .light .bg-neutral-950 { background-color: #f9fafb; }
+.light .bg-neutral-900 { background-color: #f3f4f6; }
+.light .bg-neutral-800 { background-color: #e5e7eb; }
+.light .text-white { color: #111; }
+.light .text-gray-200 { color: #1f2937; }
+.light .text-gray-300 { color: #374151; }
+.light .text-gray-400 { color: #4b5563; }
+.light .text-gray-500 { color: #6b7280; }
+.light .text-gray-600 { color: #9ca3af; }
+.light .text-gray-700 { color: #d1d5db; }
+.light .border-gray-800 { border-color: #e5e7eb; }
+.light .border-gray-700 { border-color: #d1d5db; }
+.light .border-gray-800\/50 { border-color: #e5e7eb; }
+.light .placeholder-gray-600::placeholder, .light .placeholder\:text-gray-400\/60::placeholder { color: #9ca3af; }
+.light .bg-white\/10 { background-color: #e5e7eb; }
+.light .hover\:bg-neutral-900:hover, .light .hover\:bg-neutral-800:hover { background-color: #e5e7eb; }
+.light .hover\:text-gray-200:hover, .light .hover\:text-gray-300:hover { color: #1f2937; }
+.light .bg-white { background-color: #111; }
+.light .hover\:bg-gray-200:hover { background-color: #d1d5db; }
+.light .text-black { color: #fff; }
+.light input[type="range"] { accent-color: #111; }
+.light input[type="checkbox"] { accent-color: #111; }
+.light .border-white\/30 { border-color: #d1d5db; }
+.light .border-l-white { border-left-color: #111; }
+.light .bg-green-500\/20 { background-color: #dcfce7; }
+.light .text-red-400 { color: #dc2626; }
+.light ::-webkit-scrollbar-thumb { background: #d1d5db; }
+.light ::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+.light * { scrollbar-color: #d1d5db transparent; }

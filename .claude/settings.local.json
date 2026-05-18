@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rustc --version)",
+      "Bash(cargo --version)",
+      "Bash(npm --version)",
+      "Bash(cargo install *)",
+      "Bash(npx tauri *)",
+      "Bash(npm install *)",
+      "Bash(npx vite *)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(where rc.exe)",
+      "Bash(find /c/Windows* -name \"rc.exe\")",
+      "Bash(export PATH=\"/c/Program Files \\(x86\\)/Windows Kits/10/bin/10.0.26100.0/x64:$PATH\")",
+      "Bash(cargo build *)",
+      "Bash(npx tsc *)",
+      "Bash(npx vue-tsc *)",
+      "Bash(tasklist)",
+      "Bash(cargo add *)",
+      "Bash(git --version)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
