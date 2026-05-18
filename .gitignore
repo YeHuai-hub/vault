@@ -17,6 +17,9 @@ src-tauri/target/
 .DS_Store
 Thumbs.db
 
+# Claude Code
+.claude/
+
 # Env
 .env
 .env.local
